@@ -727,3 +727,59 @@ section,
   left: 0;
   bottom: 0;
 }
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+.faq .faq-container {
+  margin-top: 15px;
+}
+
+.faq .faq-item {
+  background-color: var(--surface);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.faq .faq-item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding-right: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq .faq-item .faq-content {
+  display: none;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.faq .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-item.faq-active h3 {
+  color: var(--accent-color);
+}
+
+.faq .faq-item.faq-active .faq-content {
+  display: block;
+}
+
+.faq .faq-item.faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color: var(--accent-color);
+}
